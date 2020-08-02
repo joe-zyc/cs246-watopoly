@@ -10,7 +10,7 @@ class Player {
 	std::string name;
 	char piece;
 	int pos = 0;
-	int money = 1500
+	int money = 1500;
 	std::vector<std::shared_ptr<Residence>> rez;
 	std::vector<std::shared_ptr<Building>> buildings;
 	std::vector<std::shared_ptr<Gym>> gyms;

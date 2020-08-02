@@ -1,17 +1,4 @@
 ﻿  main.cc
-C:\Users\isabe\source\repos\joe-zyc\cs246-watopoly\player.h(14,7): error C2143: syntax error: missing ';' before 'std::vector<std::shared_ptr<Residence>,std::allocator<std::shared_ptr<Residence>>>'
-C:\Users\isabe\source\repos\joe-zyc\cs246-watopoly\player.h(13,45): error C2061: syntax error: identifier 'vector'
-C:\Users\isabe\source\repos\joe-zyc\cs246-watopoly\player.h(17,14): error C2059: syntax error: 'member initializer'
-C:\Users\isabe\source\repos\joe-zyc\cs246-watopoly\player.h(35,1): error C2059: syntax error: '<L_GRAMMAR_end_class>'
-C:\Users\isabe\source\repos\joe-zyc\cs246-watopoly\main.cc(8,22): error C2371: 'players': redefinition; different basic types
-C:\Users\isabe\source\repos\joe-zyc\cs246-watopoly\main.cc(7): message : see declaration of 'players'
-C:\Users\isabe\source\repos\joe-zyc\cs246-watopoly\main.cc(10,11): error C2088: '>>': illegal for class
-C:\Users\isabe\source\repos\joe-zyc\cs246-watopoly\main.cc(13,12): error C2088: '>>': illegal for class
   player.cc
-C:\Users\isabe\source\repos\joe-zyc\cs246-watopoly\player.h(14,7): error C2143: syntax error: missing ';' before 'std::vector<std::shared_ptr<Residence>,std::allocator<std::shared_ptr<Residence>>>'
-C:\Users\isabe\source\repos\joe-zyc\cs246-watopoly\player.h(13,45): error C2061: syntax error: identifier 'vector'
-C:\Users\isabe\source\repos\joe-zyc\cs246-watopoly\player.h(17,14): error C2059: syntax error: 'member initializer'
-C:\Users\isabe\source\repos\joe-zyc\cs246-watopoly\player.h(35,1): error C2059: syntax error: '<L_GRAMMAR_end_class>'
-C:\Users\isabe\source\repos\joe-zyc\cs246-watopoly\player.cc(20,67): error C2065: 'rez': undeclared identifier
-  test.cc
   Generating Code...
+  cs246-watopoly.vcxproj -> C:\Users\isabe\source\repos\joe-zyc\cs246-watopoly\Debug\cs246-watopoly.exe
