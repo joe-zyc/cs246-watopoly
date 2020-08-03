@@ -105,6 +105,7 @@
     <ClCompile Include="player.cc" />
     <ClCompile Include="property.cpp" />
     <ClCompile Include="residence.cpp" />
+    <ClCompile Include="slc.cpp" />
     <ClCompile Include="square.cpp" />
     <ClCompile Include="test.cc" />
     <ClCompile Include="upgradable.cpp" />
@@ -116,6 +117,7 @@
     <ClInclude Include="player.h" />
     <ClInclude Include="property.h" />
     <ClInclude Include="residence.h" />
+    <ClInclude Include="slc.h" />
     <ClInclude Include="square.h" />
     <ClInclude Include="test.h" />
     <ClInclude Include="upgradable.h" />

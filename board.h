@@ -16,6 +16,7 @@ class Board {
 
 public:
 	void newBoard();
+
 };
 
 #endif
