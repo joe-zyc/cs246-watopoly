@@ -1,4 +1,10 @@
-﻿  nonproperty.cpp
+﻿  board.cpp
+  main.cc
+  monopolyblock.cpp
+  nh.cpp
+  nonproperty.cpp
   slc.cpp
+  upgradable.cpp
   Generating Code...
-  cs246-watopoly.vcxproj -> C:\Users\isabe\Source\Repos\joe-zyc\cs246-watopoly\x64\Debug\cs246-watopoly.exe
+  LINK : C:\Users\isabe\source\repos\joe-zyc\cs246-watopoly\x64\Debug\cs246-watopoly.exe not found or not built by the last incremental link; performing full link
+  cs246-watopoly.vcxproj -> C:\Users\isabe\source\repos\joe-zyc\cs246-watopoly\x64\Debug\cs246-watopoly.exe

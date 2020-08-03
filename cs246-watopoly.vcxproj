@@ -101,6 +101,8 @@
     <ClCompile Include="board.cpp" />
     <ClCompile Include="gym.cpp" />
     <ClCompile Include="main.cc" />
+    <ClCompile Include="monopolyblock.cpp" />
+    <ClCompile Include="nh.cpp" />
     <ClCompile Include="nonproperty.cpp" />
     <ClCompile Include="player.cc" />
     <ClCompile Include="property.cpp" />
@@ -113,6 +115,8 @@
   <ItemGroup>
     <ClInclude Include="board.h" />
     <ClInclude Include="gym.h" />
+    <ClInclude Include="monopolyblock.h" />
+    <ClInclude Include="nh.h" />
     <ClInclude Include="nonproperty.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="property.h" />

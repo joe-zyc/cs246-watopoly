@@ -48,6 +48,12 @@
     <ClCompile Include="slc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="nh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="monopolyblock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="player.h">
@@ -78,6 +84,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="slc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="monopolyblock.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
