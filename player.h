@@ -18,6 +18,7 @@ class Player {
 	std::vector<std::shared_ptr<Upgradable>> upgradables;
 	std::vector<std::shared_ptr<Gym>> gyms;
 	int cups = 0;
+	bool inTims = false;
 public:
 	Player(std::string& name, char piece);
 	std::string getName();
@@ -36,6 +37,8 @@ public:
 	void buyUpgradable(Upgradable&);
 	void buyResidence(Residence&);
 	void buyGym(Gym&);
+	int worth();
+	void setInTims(bool);
 };
 
 class outOfMoney {

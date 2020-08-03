@@ -10,6 +10,12 @@
 #include "gym.h"
 #include "slc.h"
 #include "nh.h"
+#include "osap.h"
+#include "tuition.h"
+#include "timsline.h"
+#include "goosenesting.h"
+#include "gototims.h"
+#include "coopfee.h"
 
 class Square;
 

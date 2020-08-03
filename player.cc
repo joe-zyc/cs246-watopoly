@@ -48,3 +48,11 @@ void Player::buyResidence(Residence&) {
 void Player::buyGym(Gym&) {
 
 }
+
+int Player::worth() {
+	return 0;
+}
+
+void Player::setInTims(bool b) {
+	inTims = b;
+}
