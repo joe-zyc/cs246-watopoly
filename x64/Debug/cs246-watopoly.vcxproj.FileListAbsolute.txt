@@ -1,0 +1,2 @@
+C:\Users\isabe\source\repos\joe-zyc\cs246-watopoly\x64\Debug\cs246-watopoly.exe
+C:\Users\isabe\source\repos\joe-zyc\cs246-watopoly\x64\Debug\cs246-watopoly.pdb

@@ -98,14 +98,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="board.cpp" />
+    <ClCompile Include="gym.cpp" />
     <ClCompile Include="main.cc" />
+    <ClCompile Include="nonproperty.cpp" />
     <ClCompile Include="player.cc" />
+    <ClCompile Include="property.cpp" />
+    <ClCompile Include="residence.cpp" />
+    <ClCompile Include="square.cpp" />
     <ClCompile Include="test.cc" />
+    <ClCompile Include="upgradable.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="board.h" />
+    <ClInclude Include="gym.h" />
+    <ClInclude Include="nonproperty.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="property.h" />
+    <ClInclude Include="residence.h" />
+    <ClInclude Include="square.h" />
     <ClInclude Include="test.h" />
+    <ClInclude Include="upgradable.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

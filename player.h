@@ -1,9 +1,12 @@
+#ifndef _PLAYER_
+#define _PLAYER_
+
 #include <vector>
 #include <string>
 #include <memory>
 
 class Residence;
-class Building;
+class Upgradable;
 class Gym;
 
 class Player {
@@ -12,7 +15,7 @@ class Player {
 	int pos = 0;
 	int money = 1500;
 	std::vector<std::shared_ptr<Residence>> rez;
-	std::vector<std::shared_ptr<Building>> buildings;
+	std::vector<std::shared_ptr<Upgradable>> upgradables;
 	std::vector<std::shared_ptr<Gym>> gyms;
 	int cups = 0;
 public:
@@ -22,14 +25,21 @@ public:
 	int getPos();
 	void setPos(int);
 	int getMoney();
-	void setMoney(int);
+	void withdrawMoney(int);
+	void addMoney(int);
 	std::vector<std::shared_ptr<Residence>> getRez();
-	std::vector<std::shared_ptr<Building>> getBuildings();
+	std::vector<std::shared_ptr<Upgradable>> getUpgradables();
 	std::vector<std::shared_ptr<Gym>> getGyms();
 	bool isBankrupt();
 	int getCups();
 	void addCup();
-	void buyBuilding(Building&);
+	void buyUpgradable(Upgradable&);
 	void buyResidence(Residence&);
 	void buyGym(Gym&);
 };
+
+class outOfMoney {
+
+};
+
+#endif

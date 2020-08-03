@@ -1,8 +1,16 @@
 #include <vector>
 #include <iostream>
 #include "player.h"
+#include "board.h"
 
 int main() {
+
+	// BOARD INITIALIZATION ///////////////////////////////////////
+
+	Board b;
+	b.newBoard();
+
+	// PLAYER INITIALIZATION //////////////////////////////////////
 
 	int playersnum = 0;
 	std::vector<Player> players;
@@ -22,8 +30,11 @@ int main() {
 		players.emplace_back(name, c);
 	}
 
+	// GAMEPLAY ////////////////////////////////
+
 	int currPlayer = 0;
 	while (playersnum > 1) {
+		std::cout << "It is " << players[currPlayer].getName() << "'s turn";
 		std::string arg;
 		if (arg == "roll") {
 			int roll = rand() % 6 + 1 + rand() % 6 + 1;
