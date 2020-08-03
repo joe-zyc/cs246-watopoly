@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <memory>
+#include <iostream>
 #include "square.h"
 #include "property.h"
 #include "upgradable.h"
@@ -21,8 +22,14 @@ class Board {
 public:
 	Board(std::vector<std::shared_ptr<Player>>);
 	void roll(); // currplayer rolls dice, moves squares, and as the effect of the square applied on them
+	void auction(Property&);
 	std::string peek(int); // returns the name of the square at i
 	std::shared_ptr<Square> getSquare(int i);
+
 };
+
+std::ostream& operator<<(std::ostream& o, Board& b);
+
+std::istream& operator>>(std::istream& i, Board& b);
 
 #endif
