@@ -1,10 +1,4 @@
-﻿  board.cpp
-  gym.cpp
-  main.cc
-  player.cc
-  property.cpp
-  residence.cpp
+﻿  nonproperty.cpp
   slc.cpp
-  upgradable.cpp
   Generating Code...
   cs246-watopoly.vcxproj -> C:\Users\isabe\Source\Repos\joe-zyc\cs246-watopoly\x64\Debug\cs246-watopoly.exe

@@ -5,10 +5,11 @@
 #include "square.h"
 
 class NonProperty : public Square {
-	static void (*f)(Player&);
+	//static void (*f)(Player&);
 public:
-	/*NonProperty(std::string n, void (*playerEffect)(Player&));
-	void playerEffect(Player&);*/
+	//NonProperty(std::string n, void (*playerEffect)(Player&));
+	NonProperty(std::string n);
+	void playerEffect(Player&);
 };
 
 #endif

@@ -6,6 +6,7 @@
 
 class Player;
 
+
 class Square {
 	std::vector<Player*> currPlayers;
 	std::string name;
