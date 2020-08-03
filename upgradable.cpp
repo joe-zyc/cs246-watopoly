@@ -1,11 +1,13 @@
 #include "upgradable.h"
 #include <iostream>
 
-Upgradable::Upgradable(std::string name, int c, int ic, int t0, int t1, int t2, int t3, int t4, int t5) :
+Upgradable::Upgradable(std::string name, int c, int ic, int t0, int t1, int t2, int t3, int t4, int t5, std::shared_ptr<MonopolyBlock> b) :
     Property(name, c),
     improvementCost{ ic },
-    tuition{ t0, t1, t2, t3, t4, t5 }
-{}
+    tuition{ t0, t1, t2, t3, t4, t5 },
+	block{ b } {
+	b->getMembers().push_back(this);
+}
 
 int Upgradable::getImprovementCost() {
     return improvementCost;
@@ -21,10 +23,6 @@ int Upgradable::getTuition() {
     }
     if (getImprovements() == 0) return 2 * tuition[0];
     return tuition[improvements];
-}
-
-void Upgradable::addToBlock(Property& p) {
-    monopolyBlock.push_back(&p);
 }
 
 void Upgradable::playerEffect(Player& p) {
