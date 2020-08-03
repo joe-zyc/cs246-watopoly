@@ -9,6 +9,7 @@
 #include "residence.h"
 #include "gym.h"
 #include "slc.h"
+#include "nh.h"
 
 class Square;
 
