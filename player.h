@@ -18,36 +18,27 @@ class Player {
 	std::vector<std::shared_ptr<Upgradable>> upgradables;
 	std::vector<std::shared_ptr<Gym>> gyms;
 	int cups = 0;
-	bool tims = false;
-	int turnsInTims = 0;
+	bool inTims = false;
 public:
 	Player(std::string& name, char piece);
 	std::string getName();
 	char getPiece();
-
 	int getPos();
 	void setPos(int);
-
 	int getMoney();
 	void withdrawMoney(int);
 	void addMoney(int);
-
 	std::vector<std::shared_ptr<Residence>> getRez();
 	std::vector<std::shared_ptr<Upgradable>> getUpgradables();
 	std::vector<std::shared_ptr<Gym>> getGyms();
+	bool isBankrupt();
+	int getCups();
+	void addCup();
 	void buyUpgradable(Upgradable&);
 	void buyResidence(Residence&);
 	void buyGym(Gym&);
-
-	int getCups();
-	void addCup();
-	void useCup();
-	void setInTims(bool);
-	bool inTims();
-	int turnsinTims();
-	void resetTims();
-
 	int worth();
+	void setInTims(bool);
 };
 
 class outOfMoney {
