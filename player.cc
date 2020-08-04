@@ -31,11 +31,14 @@ std::vector<std::shared_ptr<Upgradable>> Player::getUpgradables() { return upgra
 
 std::vector<std::shared_ptr<Gym>> Player::getGyms() { return gyms; }
 
-bool Player::isBankrupt() { return money == 0; }
-
 int Player::getCups() { return cups; }
 
 void Player::addCup() { ++cups; }
+
+void Player::useCup()
+{
+	--cups;
+}
 
 void Player::buyUpgradable(Upgradable&) {
 
@@ -54,5 +57,21 @@ int Player::worth() {
 }
 
 void Player::setInTims(bool b) {
-	inTims = b;
+	tims = b;
+}
+
+bool Player::inTims()
+{
+	return tims;
+}
+
+int Player::turnsinTims()
+{
+	return turnsInTims;
+}
+
+void Player::resetTims()
+{
+	turnsInTims = 0;
+	tims = false;
 }

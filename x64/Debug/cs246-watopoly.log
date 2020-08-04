@@ -1,7 +1,5 @@
-﻿  board.cpp
-  gototims.cpp
-  main.cc
-  player.cc
+﻿  main.cc
   slc.cpp
   Generating Code...
   cs246-watopoly.vcxproj -> C:\Users\isabe\source\repos\joe-zyc\cs246-watopoly\x64\Debug\cs246-watopoly.exe
+  cs246-watopoly.vcxproj -> C:\Users\isabe\source\repos\joe-zyc\cs246-watopoly\x64\Debug\cs246-watopoly.pdb (Partial -> Full PDB)
