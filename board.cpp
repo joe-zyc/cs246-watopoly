@@ -2,7 +2,9 @@
 #include <string>
 #include "monopolyblock.h"
 
-Board::Board(std::vector<std::shared_ptr<Player>> p) {
+void Board::newBoard(std::vector<std::shared_ptr<Player>> p) {
+	squares.clear();
+	players.clear();
 	players = p;
 	numplayers = p.size();
 
@@ -57,12 +59,21 @@ Board::Board(std::vector<std::shared_ptr<Player>> p) {
 	squares.emplace_back(new Upgradable("DC", 400, 200, 50, 200, 600, 1400, 1700, 2000, Math)); // 39
 }
 
-void Board::roll() {
+void Board::setPlayers(std::vector<std::shared_ptr<Player>> p){
+	players = p;
+}
 
+void Board::move(int i)
+{
 }
 
 std::string Board::peek(int i) {
 	return squares[i]->getName();
+}
+
+std::shared_ptr<Player> Board::currentPlayer()
+{
+	return std::shared_ptr<Player>();
 }
 
 std::shared_ptr<Square> Board::getSquare(int i) {
