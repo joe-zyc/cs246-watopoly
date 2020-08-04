@@ -1,5 +1,6 @@
 #include "board.h"
 #include <string>
+#include <fstream>
 #include "monopolyblock.h"
 
 Board::Board(std::vector<std::shared_ptr<Player>> p) {
@@ -57,8 +58,25 @@ Board::Board(std::vector<std::shared_ptr<Player>> p) {
 	squares.emplace_back(new Upgradable("DC", 400, 200, 50, 200, 600, 1400, 1700, 2000, Math)); // 39
 }
 
-void Board::roll() {
+void Board::saveGame(std::string &fileName) {
+	std::ofstream saveFile;
+	saveFile.open(fileName);
 
+	saveFile << numplayers << std::endl;
+
+	for (int i = 0; i < numplayers; ++i) {
+		saveFile << players[i]->getName() << " " << players[i]->getPiece() << " ";
+		saveFile << players[i]->getCups() << " " << players[i]->getMoney() << " ";
+		saveFile << players[i]->getPos();
+		
+	}
+}
+
+void Board::loadGame(std::string &fileName) {
+	std::ifstream file;
+	file.open(fileName);
+	file >> numplayers;
+	
 }
 
 std::string Board::peek(int i) {
@@ -68,3 +86,4 @@ std::string Board::peek(int i) {
 std::shared_ptr<Square> Board::getSquare(int i) {
 	return squares[i];
 }
+

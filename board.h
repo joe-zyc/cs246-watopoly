@@ -36,6 +36,10 @@ public:
 	std::shared_ptr<Player> currentPlayer();
 	//void endturn();
 	std::shared_ptr<Square> getSquare(int i);
+	void loadGame(std::string &fileName);
+	void saveGame(std::string &fileName);
+	//auction
+	//trading
 };
 
 //std::istream& operator>>(std::istream& in, Board b);

@@ -19,6 +19,7 @@ class Player {
 	std::vector<std::shared_ptr<Gym>> gyms;
 	int cups = 0;
 	bool inTims = false;
+	int timsLineWait = 0;
 public:
 	Player(std::string& name, char piece);
 	std::string getName();
@@ -39,6 +40,7 @@ public:
 	void buyGym(Gym&);
 	int worth();
 	void setInTims(bool);
+	int getTimsLineWait();
 };
 
 class outOfMoney {

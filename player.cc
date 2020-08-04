@@ -56,3 +56,7 @@ int Player::worth() {
 void Player::setInTims(bool b) {
 	inTims = b;
 }
+
+int Player::getTimsLineWait() {
+	return timsLineWait;
+}
